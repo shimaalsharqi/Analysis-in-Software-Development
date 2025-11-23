@@ -1,0 +1,192 @@
+User Stories — Detailed Report
+1. Definition of User Stories
+
+A user story is a short, simple description of a feature told from the perspective of the end user.
+It focuses on what the user needs, why they need it, and the value it provides.
+
+User stories are used in Agile and Scrum to:
+
+Capture customer requirements
+
+Encourage collaboration between business and technical teams
+
+Break large features into manageable pieces
+
+Keep development focused on user value
+
+Format of a User Story
+
+A standard user story follows this format:
+
+As a type of user
+I want a goal or feature
+So that I receive a benefit or value
+
+This ensures the requirement is:
+
+User-centered
+
+Value-driven
+
+Clear and concise
+
+Examples
+
+As a customer, I want to view my account balance so that I can track my spending.
+
+As an admin, I want to generate monthly reports so that I can analyze user activity.
+
+As a student, I want to download my grade sheet so that I can keep a personal record.
+
+2. How to Write Effective User Stories
+
+To write high-quality user stories, teams often follow the INVEST model:
+
+I — Independent
+
+A story should stand alone, without depending heavily on another story.
+
+N — Negotiable
+
+It is not a contract; details can be refined through discussion.
+
+V — Valuable
+
+It must deliver clear value to the user or business.
+
+E — Estimable
+
+The team should be able to estimate its size/effort.
+
+S — Small
+
+It should fit into a single sprint (1–2 weeks).
+
+T — Testable
+
+There must be a clear way to verify it is complete.
+
+General Rules for Writing Effective User Stories
+
+Focus on the user, not the system
+
+Wrong: “The system should send a notification.”
+
+Correct: “As a user, I want to receive notifications so that I stay informed.”
+
+Keep it short and simple
+A user story should capture the essence of the requirement in one sentence.
+
+Avoid technical language
+Use business language, not implementation details.
+
+Include the reason/value ("So that…")
+This helps developers understand why the feature matters.
+
+Make sure the story is testable
+If you cannot test it, it’s not clear enough.
+
+Split large stories (Epics) into smaller pieces
+Example:
+
+“As a customer, I want to manage my account.” → too big
+Break into:
+
+View balance
+
+Update profile
+
+Change password
+
+View transactions
+
+3. Acceptance Criteria and Their Importance
+What Are Acceptance Criteria?
+
+Acceptance criteria are conditions that must be met for a user story to be considered complete.
+They define the boundaries of the story and clarify expectations.
+
+They are usually written in:
+
+Bullet points, or
+
+Given / When / Then (BDD style)
+
+Why Acceptance Criteria Are Important
+
+Acceptance criteria:
+
+Ensure Clarity
+They remove ambiguity and prevent misunderstandings.
+
+Guide Development
+Developers know exactly what to build and what success looks like.
+
+Guide Testing
+QA testers use acceptance criteria to validate the story.
+
+Define "Done"
+They act as a checklist to confirm the story meets requirements.
+
+Help Estimate Better
+Clear requirements = more accurate story point estimation.
+
+Reduce Rework
+When expectations are clear, less chances of rebuilding or modifying features later.
+
+Example of a User Story with Acceptance Criteria
+User Story
+
+As a customer, I want to receive a password reset email so that I can recover access to my account.
+
+Acceptance Criteria (Given/When/Then)
+
+Given the user is on the login page
+When they click “Forgot Password”
+Then they should be asked to enter their registered email.
+
+Given a valid email is entered
+When the user submits the form
+Then a reset link email should be sent.
+
+Given the email is not registered
+When the user submits the form
+Then an error message “Email not found” should appear.
+
+The reset link must expire after 15 minutes.
+
+The user must be able to set a new password through the link.
+
+Example of Bullet-Point Acceptance Criteria
+
+User Story: As a user, I want to update my mobile number so that my contact information stays correct.
+
+Acceptance Criteria:
+
+User can enter a new phone number.
+
+System must validate the number format.
+
+User must receive a verification code.
+
+Number is updated only after confirming the verification code.
+
+Updated number appears in the profile page.
+ -----------------------------------------------------------------------
+  Concept                     Explanation
+  --------------------------- -------------------------------------------
+  User Story                  A short statement describing user need and
+                              value
+
+  Format                      “As a… I want… So that…”
+
+  Effective Stories           Follow the INVEST model: Independent,
+                              Negotiable, Valuable, Estimable, Small,
+                              Testable
+
+  Acceptance Criteria         Conditions that determine when a story is
+                              complete; guide development and testing
+
+  Importance                  Provides clarity, reduces rework, ensures
+                              high quality, defines “Done”
+  -----------------------------------------------------------------------
