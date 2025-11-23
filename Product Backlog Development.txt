@@ -1,0 +1,276 @@
+Product Backlog Development — Detailed Report
+1. What Is a Product Backlog and Its Purpose
+
+A Product Backlog is an ordered, evolving list of everything needed to build, improve, or maintain a product. It is owned by the Product Owner and acts as the single source of truth for all desired work in Agile/Scrum.
+
+The backlog includes:
+
+Epics (large features)
+
+User stories
+
+Bugs
+
+Technical tasks
+
+Non-functional requirements (performance, security)
+
+Enablers / research spikes
+
+Purpose of a Product Backlog
+
+Defines scope clearly: shows what the team may work on now and in the future.
+
+Guides sprint planning: developers select the highest-priority items for the next sprint.
+
+Supports transparency: stakeholders can see what’s coming and why.
+
+Enables continuous delivery: the backlog evolves with customer feedback, market changes, and new insights.
+
+Aligns team and business goals: everyone works on what brings the most value.
+
+In Scrum, the backlog is never “complete”—it grows and changes as the product evolves.
+
+2. How to Create and Structure a Product Backlog
+Step 1: Identify the Product Vision
+
+Start by defining:
+
+The business goals
+
+Target users
+
+Expected outcomes
+
+Success metrics
+
+This vision guides every item added to the backlog.
+
+Step 2: Break Vision into Major Features (Epics)
+
+Epics are large functional areas such as:
+
+“User Authentication”
+
+“Payment Processing”
+
+“User Profile Management”
+
+Epics represent high-level goals that may take multiple sprints.
+
+Step 3: Create User Stories
+
+User stories express features from the user’s perspective:
+
+As a type of user, I want something so that benefit/value.
+
+Example:
+As a customer, I want to reset my password so that I can access my account if I forget it.
+
+Step 4: Add Acceptance Criteria
+
+Acceptance criteria define how the team will know the story is complete.
+
+Example (Given/When/Then style):
+
+Given I am on the login page
+
+When I click “Forgot Password”
+
+Then I should receive a reset email
+
+Step 5: Estimate the Work
+
+Teams estimate using:
+
+Story points
+
+T-shirt sizes (S, M, L, XL)
+
+Ideal hours (less common in Scrum)
+
+Estimation helps with planning and forecasting.
+
+Step 6: Organize the Backlog Structure
+
+A structured backlog includes:
+
+Top (High Priority)
+
+Small, well-refined, ready-to-develop stories
+
+Clear acceptance criteria
+
+Estimated
+
+Provide high value
+
+Middle (Medium Priority)
+
+Partially refined items
+
+Epics broken into medium-sized stories
+
+Items waiting for clarification
+
+Bottom (Low Priority)
+
+Raw ideas, long-term features
+
+Big Epics not yet broken down
+
+Future opportunities
+
+3. Backlog Prioritization Techniques
+
+Prioritization decides what to build first based on value, urgency, and effort.
+
+Here are the most widely used techniques:
+
+1. MoSCoW
+
+Classifies items into:
+
+Must have
+
+Should have
+
+Could have
+
+Won’t have for now
+
+Helps avoid “everything is urgent.”
+
+2. WSJF (Weighted Shortest Job First)
+
+Used in SAFe — chooses items that deliver the most value in the shortest time.
+
+Formula:
+WSJF = Cost of Delay ÷ Job Size
+
+Higher WSJF → higher priority.
+
+Factors in business value, risk reduction, and time criticality.
+
+3. Value vs Effort Matrix
+
+Plot features on a 2x2 grid:
+
+High value / low effort → top priority
+
+High value / high effort → long-term planning
+
+Low value / low effort → minor enhancements
+
+Low value / high effort → avoid
+
+4. Kano Model
+
+Classifies features based on user satisfaction:
+
+Basic needs (Must-be)
+
+Performance needs
+
+Delighters (unexpected positive impact)
+
+Useful for UX and customer-facing apps.
+
+5. RICE Scoring
+
+Used widely in product management.
+
+Formula:
+Reach × Impact × Confidence ÷ Effort
+
+Helps compare multiple features objectively.
+
+6. Business Value Scoring
+
+Stakeholders assign value scores (e.g., 1–10) to features based on:
+
+Revenue impact
+
+Customer satisfaction
+
+Regulatory compliance
+
+Strategic importance
+
+4. Backlog Refinement and Maintenance
+
+Backlog Refinement (also called "Grooming") is the continuous process of improving the backlog so items are clear, sized, and ready for development.
+
+Scrum recommends spending 5–10% of team capacity on refinement each sprint.
+
+What happens during backlog refinement?
+✔ 1. Breaking Epics into smaller stories
+
+Large items are broken down into stories that can fit into a single sprint.
+
+✔ 2. Clarifying requirements
+
+Product Owner, developers, UX, QA collaborate to ensure:
+
+Clear purpose
+
+Acceptance criteria
+
+User perspective
+
+Dependencies identified
+
+✔ 3. Re-estimating items
+
+Estimates change when:
+
+More information becomes available
+
+Technical complexity becomes clearer
+
+✔ 4. Reprioritizing items
+
+Based on:
+
+New customer feedback
+
+Technical challenges
+
+Risks
+
+Market changes
+
+✔ 5. Cleaning outdated or irrelevant items
+
+Some items are removed if:
+
+No longer needed
+
+Out of scope
+
+Technically obsolete
+
+Outcome of Backlog Refinement
+
+A “Ready” state for top items:
+
+Small
+
+Clear
+
+Testable
+
+Estimated
+
+High value
+
+No major unknowns
+
+These items become candidates for the next Sprint Planning meeting.
+
+Summary Table
+Topic	Explanation
+Purpose of Backlog	Single source of truth for all work, guides planning, ensures alignment, supports agility
+How to Structure It	Vision → Epics → User Stories → Acceptance Criteria → Estimates
+Prioritization Techniques	MoSCoW, WSJF, RICE, Kano, Value/Effort Matrix, Business Value Scoring
+Refinement	Ongoing process of clarifying, splitting, estimating, and prioritizing backlog items
