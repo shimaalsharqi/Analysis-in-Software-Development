@@ -1,0 +1,66 @@
+## Estimation Techniques Table
+
+| Technique        | Description |
+|------------------|-------------|
+| Story Points     | Numeric estimation of effort and complexity |
+| Planning Poker   | Team voting technique using cards |
+| T-shirt Sizing   | Uses sizes (S, M, L, XL) to represent complexity |
+| Fibonacci Scale  | Story points based on 1,2,3,5,8,13... |
+
+```mermaid
+flowchart TD
+    A[Requirements Gathering] --> B[Requirements Analysis]
+    B --> C[Feasibility Study]
+    C --> D[Documentation]
+    D --> E[Validation]
+
+---
+
+## **Example 2: Product Backlog Prioritization (MoSCoW)**
+
+```md
+```mermaid
+pie title Product Backlog (MoSCoW)
+    "Must Have" : 50
+    "Should Have" : 25
+    "Could Have" : 15
+    "Won't Have" : 10
+
+---
+
+## **Example 3: User Story Workflow**
+
+```md
+```mermaid
+sequenceDiagram
+    User ->> ProductOwner: Submits need
+    ProductOwner ->> Backlog: Adds user story
+    Team ->> Backlog: Estimates story points
+    Sprint ->> Team: Selected for development
+
+---
+
+# 3️⃣ **Charts (PNG/JPG/SVG) in README.md**
+
+If you want more visual charts (bar charts, pie charts…), do this:
+
+### **Step 1 — Create the chart**
+Use any free tool:
+- Canva  
+- draw.io  
+- Google Sheets  
+- Excalidraw  
+- Lucidchart  
+- Or ask me to generate one for you as an image
+
+### **Step 2 — Upload the chart to your GitHub repo**
+
+Place it inside a folder, e.g.:
+
+
+### **Step 3 — Insert it inside README.md**
+
+```md
+## Story Point Distribution Chart
+
+![Story Points Chart](assets/charts/story-points.png)
