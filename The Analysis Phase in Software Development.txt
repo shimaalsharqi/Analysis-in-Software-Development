@@ -1,0 +1,216 @@
+The Analysis Phase in Software Development — Detailed Report
+1. What is the Analysis Phase — definition & importance
+
+The Analysis Phase (often called Requirements Analysis or Requirements Engineering) is the stage of the Software Development Life Cycle (SDLC) where the project's goals and stakeholder needs are collected, clarified, and converted into clear, testable, and prioritized requirements. During analysis the team moves from high-level ideas (business needs, constraints, and objectives) to a practical, documented set of functional and non-functional requirements that will guide design, development, testing, and deployment. This phase reduces ambiguity, uncovers hidden assumptions, identifies constraints and risks, and provides the base artifacts (SRS, use cases, user stories, backlog) that drive the rest of the project. 
+IBM
++1
+
+Why it matters: poor or incomplete analysis is a leading cause of project delays, rework, budget overruns and scope creep: investing time to get requirements right early substantially reduces downstream cost and risk. 
+Epicflow
++1
+
+2. Sub-steps of the Analysis Phase (detailed)
+
+Below are typical sub-steps, with what happens in each and recommended techniques.
+
+2.1 Stakeholder identification & context understanding
+
+Goal: identify who cares about the system (users, sponsors, regulators, ops, support) and understand business context, constraints, success criteria and high-level scope.
+Activities: stakeholder maps, RACI, interviews with sponsors and domain experts, context diagrams.
+Why: ensures you elicit requirements from the right people and understand non-functional constraints (security, legal, performance). 
+bridging-the-gap.com
++1
+
+2.2 Requirements elicitation
+
+Goal: extract needs and expectations from stakeholders and existing artifacts.
+Techniques: interviews, workshops, surveys, observation, shadowing, document analysis, prototyping, user journey mapping, and facilitated brainstorming. Use a mix — some needs are explicit, others tacit and require probing. 
+bridging-the-gap.com
++1
+
+2.3 Requirements analysis & modeling
+
+Goal: convert raw inputs into structured requirements and models that expose ambiguity, conflicts and dependencies.
+Artifacts & techniques:
+
+Functional requirements (what the system must do) and non-functional requirements (performance, security, availability).
+
+Use cases / scenarios, user stories, acceptance criteria (Given/When/Then).
+
+Data models (ERD), process models (BPMN), state/sequence diagrams, and wireframes/prototypes.
+Modeling makes assumptions explicit and helps discover missing requirements. 
+CIn UFPE
++1
+
+2.4 Requirements specification (SRS / documented backlog)
+
+Goal: produce formalized, reviewable, and versioned requirement documents (SRS or product backlog). For agile teams this often results in an ordered product backlog of Epics and User Stories with acceptance criteria and initial estimates. For plan-driven projects this produces an SRS aligned to standards (e.g., ISO/IEC/IEEE 29148 / IEEE 830). 
+drkasbokar.com
++1
+
+2.5 Requirements validation & stakeholder review
+
+Goal: confirm the documented requirements reflect stakeholder intent and are testable and consistent.
+Activities: review workshops, acceptance criteria reviews, prototyping demos, traceability checks, sign-offs. Early validation prevents expensive rework later. 
+IBM
+
+2.6 Prioritization & backlog preparation
+
+Goal: decide which pieces deliver the most value earliest and create a prioritized backlog.
+Techniques: MoSCoW, WSJF (Weighted Shortest Job First), Kano, business value vs effort matrices. Produce prioritized Epics/User Stories and initial sizing for planning. 
+Deviniti
+
+2.7 Requirements management (change control & traceability)
+
+Goal: manage requirement changes, track history and maintain traceability between requirements, design, code and tests.
+Activities: change request process, version control for SRS/backlog, traceability matrices, impact analysis. This controls scope creep and assesses impact of changes. 
+Requiment
++1
+
+2.8 Feasibility & risk assessment
+
+Goal: evaluate technical, schedule, cost and regulatory feasibility and record key risks and mitigations. Results may reprioritize requirements or require prototypes/spikes. 
+Intellectsoft
+
+3. Deliverables and outcomes of the Analysis Phase
+
+Common, expected outputs (deliverables) after a complete analysis phase:
+
+Stakeholder register / context diagrams — who, roles, responsibilities.
+
+Business requirements document (BRD) — high-level goals, KPIs and scope.
+
+Software Requirements Specification (SRS) or equivalent — detailed functional & non-functional requirements, interfaces, constraints. (Standards: IEEE 830 / ISO/IEC/IEEE 29148 provide SRS structure.) 
+CIn UFPE
++1
+
+Product backlog / ordered Epics & User Stories with acceptance criteria and initial story points (for Agile). 
+GeeksforGeeks
+
+Use cases / user journeys / scenarios to describe interactions.
+
+Models and diagrams: ERD, sequence/state diagrams, BPMN flows, wireframes/prototypes.
+
+Traceability matrix linking requirements → design → tests.
+
+Requirements change log & impact analysis (change control records).
+
+Risk register & feasibility analysis with mitigations and recommendations.
+
+These deliverables together enable designers, developers and testers to proceed with clarity, and they provide artifacts for stakeholder review and formal approvals.
+
+4. Best practices for the Analysis Phase
+
+Based on industry guidance and standards, the following practices reduce risk and increase quality:
+
+Engage the right stakeholders early and often. Include end users, ops, security, legal — not just sponsors — to catch cross-cutting requirements. 
+bridging-the-gap.com
+
+Mix elicitation techniques. Use interviews, workshops, observation and prototyping to surface tacit requirements. No single technique suffices. 
+aqua cloud - best software for testing
+
+Write testable requirements. Functional requirements must be verifiable; use acceptance criteria in Given/When/Then form for each user story. 
+Wikipedia
+
+Model visually. Diagrams (ERD, sequence, BPMN) reveal missing information and ambiguities faster than prose. 
+CIn UFPE
+
+Prioritize continuously. Use objective prioritization frameworks (WSJF, MoSCoW) and re-evaluate regularly as business needs evolve. 
+Deviniti
+
+Maintain traceability. Link requirements to tests and design artifacts to ease impact analysis and verification. 
+reqview.com
+
+Keep requirements concise and incremental. For Agile, prefer smaller user stories that can be completed within a sprint — follow INVEST (Independent, Negotiable, Valuable, Estimable, Small, Testable). 
+Medium
+
+Use structured templates and standards. SRS templates (IEEE / ISO) reduce omissions and inconsistencies for larger projects. 
+math.uaa.alaska.edu
+
+5. Common challenges and how to mitigate them
+
+Challenge — Ambiguous or incomplete requirements: vague requirements lead to different interpretations.
+Mitigation: insist on examples, acceptance criteria, prototypes and review sessions; convert vague needs into user stories with testable criteria. 
+Medium
+
+Challenge — Changing requirements / scope creep: business priorities shift, stakeholders add features.
+Mitigation: adopt a controlled change management process, use prioritization frameworks (WSJF/MoSCoW), and maintain a backlog grooming cadence. Formalize how changes are approved and their impact assessed. 
+Epicflow
++1
+
+Challenge — Stakeholder conflicts & missing stakeholders: different stakeholders request contradictory behaviors, or a stakeholder was not consulted.
+Mitigation: stakeholder mapping, facilitated workshops to reconcile conflicts, and documented sign-offs for key requirements. 
+bridging-the-gap.com
+
+Challenge — Non-functional requirements overlooked: performance, scalability, security not specified until late.
+Mitigation: include NFRs explicitly in the SRS/backlog and verify them with performance/security acceptance criteria and tests. 
+reqview.com
+
+Challenge — Underestimation of work / poor sizing: leads to missed deadlines and re-planning.
+Mitigation: use team-based estimation like Planning Poker, T-shirt sizing, and maintain historical velocity metrics to translate story points into time. 
+Deviniti
+
+Challenge — Poor requirement management & traceability: changes are applied ad hoc and tests can’t prove coverage.
+Mitigation: traceability matrix, versioned SRS/backlog, and linking requirements → implementation → tests in tools (Jira, Azure DevOps, ReqView). 
+reqview.com
+
+6. Practical checklist for a robust Analysis Phase
+
+Use this checklist as the minimum completion criteria before moving to design/development:
+
+Stakeholders identified and interviewed; sponsor objectives documented.
+
+Business goals and acceptance criteria (KPIs) defined.
+
+Functional and non-functional requirements documented (SRS/backlog).
+
+User stories & acceptance criteria written for initial releases (INVEST).
+
+Prioritization applied and a first product backlog created.
+
+Visual models created for key flows and data.
+
+Risks and feasibility logged and mitigation plans set.
+
+Review and sign-off obtained from primary stakeholders.
+
+Traceability links established from requirements to test cases.
+
+Change control process defined for remaining project life.
+
+7. Short bibliography / sources (selected)
+
+I used up-to-date, authoritative sources to compile the report; here are the main references:
+
+IBM — “What is the Software Development Lifecycle (SDLC)?” — explanation of Analysis role in SDLC. 
+IBM
+
+IEEE / ISO SRS guidance (IEEE 830 / ISO/IEC/IEEE 29148) — templates and recommended SRS contents. 
+CIn UFPE
++1
+
+Practical guides on elicitation and analyst techniques (Bridging the Gap, Medium, Aqua-cloud). 
+bridging-the-gap.com
++2
+Medium
++2
+
+Articles on backlog/prioritization and requirements management (Deviniti, GeeksforGeeks) and scope creep controls (PMI, Epicflow). 
+Deviniti
++2
+GeeksforGeeks
++2
+
+8. Quick next-steps (if you will implement this in your repo)
+
+Create sections/01-analysis-phase.md and paste this report in (edit language & formatting to your class requirements).
+
+Add examples: template SRS skeleton, one completed user story with acceptance criteria, a simple ERD or Mermaid flow.
+
+Start a branch feature/analysis-phase → commit → push → create PR → request review and merge. (I can produce those ready-to-copy templates for you.)
+
+If you want, I can next:
+
+Generate a ready-to-paste SRS skeleton (IEEE/ISO style) and a sample user story + acceptance criteria for your banking example, or
+
+Produce the exact Markdown file sections/01-analysis-phase.md formatted and ready to commit into your repository.
