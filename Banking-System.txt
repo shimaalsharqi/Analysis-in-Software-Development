@@ -1,0 +1,232 @@
+#️⃣ 1. System Overview — Banking System
+
+A modern digital banking system allows customers to create accounts, view balances, transfer funds, manage loans, request statements, and perform secure operations through online or mobile channels.
+
+This example applies all concepts: Analysis Phase → Product Backlog → User Stories → Estimation → Acceptance Criteria.
+#️⃣ 2. Banking System — High-Level Architecture Diagram
+
+Add this directly to README:
+
+## Banking System Architecture
+
+```mermaid
+flowchart LR
+    User[Customer / Admin] --> UI[Web / Mobile App]
+    UI --> API[Banking API]
+    API --> Auth[Authentication Service]
+    API --> Core[Core Banking Service]
+    Core --> DB[(Bank Database)]
+    Core --> Notif[Notification Service]
+
+
+---
+
+# #️⃣ **3. Banking System Main Workflow Diagram**
+
+```md
+## Customer Interaction Flow
+
+```mermaid
+flowchart TD
+    A[Login / Register] --> B[Dashboard]
+    B --> C[View Accounts]
+    B --> D[Transfer Funds]
+    B --> E[Apply for Loan]
+    B --> F[Download Statements]
+    D --> G[OTP Verification]
+    G --> H[Transfer Successful]
+
+
+---
+
+# #️⃣ **4. Full Product Backlog (Weighted + Prioritized)**
+
+```md
+## Product Backlog — Banking System
+
+| ID | User Story Title | Priority | Business Value | Complexity (Story Points) | Status |
+|----|------------------|----------|----------------|----------------------------|--------|
+| US01 | User Registration | High | 10 | 5 | To-Do |
+| US02 | User Login (with 2FA) | High | 10 | 8 | To-Do |
+| US03 | View Account Balance | High | 9 | 3 | To-Do |
+| US04 | Deposit Funds | Medium | 8 | 5 | To-Do |
+| US05 | Withdraw Funds | Medium | 8 | 5 | To-Do |
+| US06 | Transfer Funds (Internal) | High | 10 | 8 | To-Do |
+| US07 | Transfer Funds (External) | High | 10 | 13 | To-Do |
+| US08 | OTP Verification | High | 9 | 8 | To-Do |
+| US09 | Download Account Statement | Medium | 7 | 5 | To-Do |
+| US10 | Loan Application | Medium | 7 | 8 | To-Do |
+| US11 | View Loan Status | Low | 6 | 3 | To-Do |
+| US12 | Transaction History | Medium | 8 | 5 | To-Do |
+| US13 | Profile Management | Low | 6 | 3 | To-Do |
+| US14 | Change Password | High | 9 | 3 | To-Do |
+| US15 | Admin: Approve Loans | Medium | 8 | 8 | To-Do |
+
+
+#️⃣ 5. User Stories (10–15 User Stories)
+
+Below are 15 fully written, professional user stories.
+
+US01 — User Registration
+
+User Story
+As a new user, I want to register with my personal information so that I can create a bank account and access online services.
+
+Acceptance Criteria
+
+User must enter full name, email, phone, password.
+
+User receives verification email or OTP.
+
+Registration succeeds only if data is valid.
+
+Duplicate email is not allowed.
+
+US02 — User Login with 2FA
+
+User Story
+As a customer, I want to log in securely so that I can access my banking dashboard.
+
+Acceptance Criteria
+
+User enters email + password.
+
+System sends OTP.
+
+Login succeeds only after OTP verification.
+
+US03 — View Account Balance
+
+User Story
+As a customer, I want to view my account balance so that I can know how much money I have.
+
+Acceptance Criteria
+
+Dashboard displays current balance.
+
+Balance updates in real time.
+
+US04 — Deposit Funds
+
+Acceptance Criteria:
+
+User selects account.
+
+User enters deposit amount.
+
+System updates balance instantly.
+
+US05 — Withdraw Funds
+
+Acceptance Criteria:
+
+User cannot withdraw more than current balance.
+
+System logs the transaction.
+
+US06 — Internal Transfer (Within same bank)
+
+Acceptance Criteria:
+
+User enters recipient account number.
+
+System validates recipient.
+
+OTP is required before confirming transfer.
+
+US07 — External Transfer (Other Banks)
+
+Acceptance Criteria:
+
+User enters IBAN + bank name.
+
+System performs fraud detection.
+
+Transfer may take 1–2 business days.
+
+US08 — OTP Verification
+
+Acceptance Criteria:
+
+OTP expires in 60 seconds.
+
+Incorrect OTP produces an error.
+
+US09 — Download Account Statement
+
+Acceptance Criteria:
+
+User can select date range.
+
+Statement can be downloaded as PDF.
+
+US10 — Loan Application
+
+Acceptance Criteria:
+
+User enters salary, employment status.
+
+System displays eligibility.
+
+US11 — View Loan Status
+
+Acceptance Criteria:
+
+User can see approved / rejected / pending status.
+
+US12 — Transaction History
+
+Acceptance Criteria:
+
+Shows all transactions with filters.
+
+US13 — Profile Management
+
+Acceptance Criteria:
+
+User can update email, phone, and address.
+
+US14 — Change Password
+
+Acceptance Criteria:
+
+User must enter old password.
+
+New password must meet security rules.
+
+US15 — Admin: Approve Loans
+
+Acceptance Criteria:
+
+Admin sees list of pending loans.
+
+Admin can approve/reject with comments.
+#️⃣ 6. Estimation Diagram (Story Points)
+## Story Point Estimation (Fibonacci Scale)
+
+```mermaid
+pie title Story Point Distribution
+    "3 Points" : 4
+    "5 Points" : 4
+    "8 Points" : 4
+    "13 Points" : 1
+
+
+---
+
+# #️⃣ **7. Backlog Prioritization (MoSCoW)**
+
+```md
+## MoSCoW Prioritization
+
+```mermaid
+pie title MoSCoW Breakdown
+    "Must Have" : 7
+    "Should Have" : 5
+    "Could Have" : 2
+    "Won't Have" : 1
+
+
+---
+
+---
